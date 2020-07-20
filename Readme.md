@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Доршакова](https://up.htmlacademy.ru/adaptive/20/user/298063).
-* Наставник: [Андрей Пудов]`(https://htmlacademy.ru/profile/kamelot43).
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
