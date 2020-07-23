@@ -144,6 +144,37 @@
           </li>
         </ul>
       </section>
+
+      <section class="photo-filter">
+        <div class="photo-filter__wrapper">
+          <h2 class="visually-hidden">Фильтр для фотографий</h2>
+          <p class="photo-filter__intro">
+            Затмите их всех!
+            Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <img class="photo-filter__photo" src="https://via.placeholder.com/150x150" alt="Фотография заснеженной дороги">
+          <div class="photo-filter__settings filter-setup">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <div class="filter-setup__options">
+                <button class="filter-setup__item" aria-label="Обрезать изображение">Обрезать изображение</button>
+                <button class="filter-setup__item" aria-label="Настроить заливку изображения">Настроить заливку изображения</button>
+                <button class="filter-setup__item" aria-label="Настроить контраст изображения">Настроить контраст изображения</button>
+              </div>
+              <div class="filter-setup__range range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__toggle"></div>
+              </div>
+              <p class="filter-setup__results photo-submit">
+                <button class="photo-submit__button post-btn" type="submit">Запостить</button>
+                <button class="photo-submit__button cancel-btn">Отмена</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
