@@ -1,0 +1,22 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+.site-nav {
+  display: none;
+  @include list-style;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $midnight-blue;
+}
+
+.site-nav__item {
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.site-nav__link:visited {
+  color: $white;
+}

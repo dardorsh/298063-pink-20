@@ -1,0 +1,21 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+.photo-section {
+  background-color: $white;
+  font-size: 14px;
+}
+
+.photo-section__title {
+  background-color: lightblue;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: $white;
+}
+
+.photo-section__intro {
+  line-height: 30px;
+}
+
+

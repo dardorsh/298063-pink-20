@@ -1,0 +1,29 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+.advantages {
+  background-color: $gray;
+}
+
+.advantages__title {
+  background-color: $white;
+  font-size: 24px;
+  font-weight: 300;
+  color: $midnight-blue;
+}
+
+.advantages__list {
+  @include list-style;
+}
+
+.advantages__subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__description {
+  color: $midnight-blue;
+  font-size: 14px;
+  line-height: 24px;
+}

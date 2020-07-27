@@ -1,0 +1,31 @@
+// Variables
+
+// Fonts
+$font-type: "Open Sans", Arial, sans-serif;
+
+// Colors
+$header-transparent-color: rgba(0, 0, 0, 0.3);
+$white: #FFFFFF;
+$black: #000000;
+$dark-blue: #1D2631;
+$midnight-blue: #283645;
+$gray: #F2F2F2;
+$light-gray: #E5E5E5;
+
+// Mixins
+
+@mixin visually-hidden {
+  border: 0;
+  clip-path: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin list-style {
+  padding: 0;
+  list-style: none;
+}

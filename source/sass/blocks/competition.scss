@@ -1,0 +1,15 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+.competition__title {
+  background-color: $light-gray;
+  color: $white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.competition__intro {
+  font-size: 14px;
+  line-height: 30px;
+}

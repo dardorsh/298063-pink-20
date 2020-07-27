@@ -1,0 +1,6 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+.social__list {
+  @include list-style;
+}

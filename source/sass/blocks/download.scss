@@ -1,0 +1,36 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+
+.download__container {
+  background: url(../../img/bg-back-mobile@1x.jpg) no-repeat 0 0;
+}
+
+.download__title {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.download__wrapper {
+  background-color: $dark-blue;
+  color: $white;
+}
+
+.download__link {
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+
+  border: 3px solid $white;
+  border-radius: 29px;
+}
+
+.download__icons {
+  @include list-style;
+}
+
+.download__info {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
