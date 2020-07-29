@@ -7,15 +7,17 @@
 }
 
 .photo-section__title {
-  background-color: lightblue;
+  @include bg-image-mobile;
+  min-width: 320px;
+  min-height: 220px;
+
+  color: $white;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
-  color: $white;
 }
 
 .photo-section__intro {
+  color: $midnight-blue;
   line-height: 30px;
 }
-
-

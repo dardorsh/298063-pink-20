@@ -2,13 +2,10 @@
 @import "../sass/variables.scss";
 
 
-.download__container {
-  background: url(../../img/bg-back-mobile@1x.jpg) no-repeat 0 0;
-}
-
 .download__title {
   font-weight: 300;
   font-size: 24px;
+  color: $white;
 }
 
 .download__wrapper {

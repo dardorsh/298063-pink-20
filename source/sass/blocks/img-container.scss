@@ -1,0 +1,8 @@
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+
+.img-container {
+  @include bg-image-mobile;
+  min-width: 320px;
+  min-height: 462px;
+}
