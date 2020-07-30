@@ -1,8 +1,5 @@
 // Variables
 
-// Fonts
-$font-type: "Open Sans", arial, sans-serif;
-
 // Colors
 $header-transparent-color: rgba(0, 0, 0, 0.3);
 $white: #ffffff;
@@ -13,6 +10,10 @@ $gray: #f2f2f2;
 $light-gray: #e5e5e5;
 
 // Mixins
+
+@mixin font-type {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
 
 @mixin visually-hidden {
   border: 0;

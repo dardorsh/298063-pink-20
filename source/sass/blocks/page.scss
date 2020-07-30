@@ -1,10 +1,10 @@
-@import "../sass/fonts.scss";
 @import "../sass/variables.scss";
 
 body {
-  font-family: $font-type;
+  @include font-type;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 400;
 }
 
 a {
