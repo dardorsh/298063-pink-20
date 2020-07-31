@@ -1,0 +1,6 @@
+@import "../sass/variables.scss";
+
+.user-photo {
+  @include list-style;
+  line-height: 24px;
+}

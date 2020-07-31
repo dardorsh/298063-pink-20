@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+      <a class="page-header__logo logo">
+        <img class="logo__pic" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
       </a>
 
       <nav class="main-nav">
@@ -43,27 +45,31 @@
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
 
       <section class="download">
-        <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-        <img class="download__image" src="https://via.placeholder.com/150x150" alt="Смартфон с фотографией в розовых тонах на экране">
-        <a class="download__link" href="#">Скачать приложение</a>
-        <ul class="download__icons system-list">
-          <li class="system-list__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" alt="Скачать для Apple">
-            </a>
-          </li>
-          <li class="system-list__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" alt="Скачать для Android">
-            </a>
-          </li>
-          <li class="system-list__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" alt="Скачать для Windows">
-            </a>
-          </li>
-        </ul>
-        <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="img-container">
+          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+          <img class="download__image" src="https://via.placeholder.com/150x150" alt="Смартфон с фотографией в розовых тонах на экране">
+        </div>
+        <div class="download__wrapper">
+          <a class="download__link" href="#">Скачать приложение</a>
+          <ul class="download__icons system-list">
+            <li class="system-list__item">
+              <a href="https://www.apple.com/ru/ios/app-store">
+                <img src="https://via.placeholder.com/150x150" alt="Скачать для Apple">
+              </a>
+            </li>
+            <li class="system-list__item">
+              <a href="https://play.google.com/store?hl=ru">
+                <img src="https://via.placeholder.com/150x150" alt="Скачать для Android">
+              </a>
+            </li>
+            <li class="system-list__item">
+              <a href="https://www.microsoft.com/ru-ru/store/apps">
+                <img src="https://via.placeholder.com/150x150" alt="Скачать для Windows">
+              </a>
+            </li>
+          </ul>
+          <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
 
       <section class="advantages">
@@ -103,7 +109,7 @@
                 </p>
               </blockquote>
             </div>
-            <div class="slider__wrapper">
+            <div class="slider__wrapper visually-hidden">
               <blockquote class="reviews__item slider__item">
                 <p class="reviews__author-name">Lorem Ipsum</p>
                 <p class="reviews__text">
@@ -113,7 +119,7 @@
               </blockquote>
             </div>
             <div class="slider__wrapper">
-              <blockquote class="reviews__item slider__item">
+              <blockquote class="reviews__item slider__item visually-hidden">
                 <p class="reviews__author-name">Lorem Ipsum</p>
                 <p class="reviews__text">
                 «Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -134,15 +140,15 @@
         <div class="pricing__wrapper slider">
           <h2 class="visually-hidden">Цены</h2>
           <table class="pricing__info prices-table">
-            <tr class="prices-table__row">
+            <tr class="prices-table__row prices-table__row--highlight">
               <th class="prices-table__item">
-                База <span class="prices-table__amount">1,99 USD</span>
+                База <br> <span class="prices-table__amount">1,99 USD</span>
               </th>
               <th class="prices-table__item">
-                Стандарт <span class="prices-table__amount">3,99 USD</span>
+                Стандарт <br> <span class="prices-table__amount">3,99 USD</span>
               </th>
               <th class="prices-table__item">
-                Анлим <span class="prices-table__amount">3,99 USD</span>
+                Анлим <br> <span class="prices-table__amount">3,99 USD</span>
               </th>
             </tr>
             <tr class="prices-table__row">
@@ -182,7 +188,7 @@
           </p>
           <p class="contacts__text">
             Приезжайте в гости:
-            <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+            <span class="contacts__item contacts__item--inactive">ул. Большая Конюшенная, 19/8</span>
           </p>
         </div>
         <div class="contacts__map">
@@ -196,7 +202,6 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/150x150" alt="Логотип Pink">
-          Pink
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

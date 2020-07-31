@@ -1,0 +1,22 @@
+@import "../sass/variables.scss";
+
+.photo-section {
+  background-color: $white;
+  font-size: 14px;
+}
+
+.photo-section__title {
+  @include bg-image-mobile;
+  min-width: 320px;
+  min-height: 220px;
+
+  color: $white;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+}
+
+.photo-section__intro {
+  color: $midnight-blue;
+  line-height: 30px;
+}
