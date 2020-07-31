@@ -2,4 +2,21 @@
 
 .social__list {
   @include list-style;
+  display: flex;
 }
+
+.social__item {
+  margin-right: 14px;
+}
+
+.social__link {
+  border: none;
+  color: $black;
+}
+
+// .social__link--twitter {
+// }
+
+// .social__link--facebook
+
+// .social__link--youtube

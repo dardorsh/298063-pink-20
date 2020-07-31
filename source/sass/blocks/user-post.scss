@@ -1,5 +1,20 @@
 @import "../sass/variables.scss";
 
-.user-post__time {
-  font-size: 12px;
+// .user-post
+
+// .user-post__image
+
+.user-post__container {
+  background-color: $gray;
+  width: 280px;
 }
+
+// .user-post__comment
+
+.user-post__time {
+  color: $midnight-blue;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+// .user-post__likes
