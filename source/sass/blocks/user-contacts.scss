@@ -1,0 +1,24 @@
+@import "../sass/variables.scss";
+
+.user-contacts {
+  padding-bottom: 15px;
+}
+
+.user-contacts__item {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.user-contacts__fill {
+  @include form-input;
+
+  &::placeholder {
+    @include input-placeholder;
+  }
+}
+
+.user-contacts__label {
+  @include form-label;
+  // display: block;
+  // color: $pink;
+}

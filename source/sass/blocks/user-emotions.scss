@@ -1,0 +1,16 @@
+@import "../sass/variables.scss";
+// .user-emotions
+.user-emotions__fill {
+  border: 2px solid $light-gray;
+  border-radius: 1px;
+  width: 276px;
+  min-height: 197px;
+  margin-top: 22px;
+  resize: none;
+
+  &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+
+    @include input-placeholder;
+  }
+}

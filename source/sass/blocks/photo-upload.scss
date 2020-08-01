@@ -1,0 +1,22 @@
+@import "../sass/variables.scss";
+
+.photo-upload {
+  width: 280px;
+  min-height: 384px;
+
+  background-image: url("../../img/photo-road-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  margin-left: 20px;
+}
+
+.photo-upload__input {
+  width: 280px;
+  min-height: 384px;
+
+  opacity: 0;
+  cursor: pointer;
+}
+
+// .photo-upload__label {
+// }
