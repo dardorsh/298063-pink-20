@@ -2,14 +2,23 @@
 
 .photo-filter {
   background-color: $light-gray;
+  padding-bottom: 29px;
 }
 
 // .photo-filter__wrapper
 
 .photo-filter__intro {
   background-color: $white;
+  color: $midnight-blue;
+
+  font-size: 14px;
+  line-height: 30px;
+
+  padding-bottom: 52px;
 }
 
-// .photo-filter__upload
+.photo-filter__upload {
+  margin-top: 20px;
+}
 
 // .photo-filter__settings

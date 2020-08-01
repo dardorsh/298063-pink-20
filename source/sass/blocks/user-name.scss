@@ -1,0 +1,22 @@
+@import "../sass/variables.scss";
+
+// .user-name
+
+.user-name__list {
+  @include list-style;
+}
+
+// .user-name__item
+
+.user-name__label {
+  @include form-label;
+  margin-top: 29px;
+}
+
+.user-name__fill {
+  @include form-input;
+
+  &::placeholder {
+    @include input-placeholder;
+  }
+}

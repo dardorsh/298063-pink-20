@@ -1,0 +1,30 @@
+@import "../sass/variables.scss";
+
+.range-controls {
+  margin-top: 39px;
+  margin-left: 40px;
+}
+
+// .range-controls__scale
+
+.range-controls__bar {
+  width: 240px;
+  height: 2px;
+
+  background-color: $midnight-blue;
+  position: absolute;
+}
+
+.range-controls__toggle {
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+
+  position: relative;
+  top: -8px;
+  left: 193px;
+
+  cursor: pointer;
+}
