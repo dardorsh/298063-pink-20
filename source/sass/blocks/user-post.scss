@@ -1,15 +1,19 @@
 @import "../sass/variables.scss";
 
-// .user-post
+.user-post {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 // .user-post__image
 
 .user-post__container {
   background-color: $gray;
-  width: 280px;
 }
 
-// .user-post__comment
+.user-post__comment {
+  margin: 0;
+}
 
 .user-post__time {
   color: $midnight-blue;

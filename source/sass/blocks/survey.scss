@@ -26,6 +26,26 @@
   @include visually-hidden;
 }
 
+.survey__input {
+  @include form-input;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
+
+  &::placeholder {
+    @include input-text;
+  }
+
+  &:hover {
+    border: 2px solid $midnight-blue;
+  }
+
+  &:focus {
+    outline-color: $pink;
+  }
+}
+
 .survey__submit {
   width: 276px;
   height: 59px;

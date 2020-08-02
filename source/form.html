@@ -60,15 +60,15 @@
             <ul class="user-name__list">
               <li class="user-name__item">
                 <label class="user-name__label" for="surname">Фамилия:</label>
-                <input class="user-name__fill" type="text" id="surname" name="user-surname" placeholder="Укажите фамилию *" required>
+                <input class="survey__input user-name__fill" type="text" id="surname" name="user-surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="name">Имя:</label>
-                <input class="user-name__fill" type="text" id="name" name="user-name" placeholder="Введите ваше имя *" required>
+                <input class="survey__input user-name__fill" type="text" id="name" name="user-name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="patronym">Отчество:</label>
-                <input class="user-name__fill" type="text" id="patronym" name="user-patronym" placeholder="Ну и отчество тоже">
+                <input class="survey__input user-name__fill" type="text" id="patronym" name="user-patronym" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
@@ -105,11 +105,11 @@
             <p class="survey__subtitle survey__subtitle--hidden">Контактная информация</p>
             <p class="user-contacts__item">
               <label class="user-contacts__label" for="phone">Номер телефона</label>
-              <input class="user-contacts__fill" type="tel" id="phone" placeholder="Номер, пожалуйста">
+              <input class="survey__input user-contacts__fill" type="tel" id="phone" placeholder="Номер, пожалуйста">
             </p>
             <p class="user-contacts__item">
               <label class="user-contacts__label" for="email">Адрес почты</label>
-              <input class="user-contacts__fill" type="email" id="email" placeholder="Введите почту *">
+              <input class="survey__input user-contacts__fill" type="email" id="email" placeholder="Введите почту *">
             </p>
           </fieldset>
           <fieldset class="survey__section user-app">
@@ -131,7 +131,7 @@
           </fieldset>
           <fieldset class="survey__section user-emotions">
             <p class="survey__subtitle">Опишите свои эмоции</p>
-            <textarea class="user-emotions__fill" name="impressions" id="user-impressions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="survey__input user-emotions__fill" name="impressions" id="user-impressions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             <label for="user-impressions" class="visually-hidden">Расскажите о своих впечатлениях</label>
           </fieldset>
           <button class="survey__submit" type="submit">Отправить форму</button>
@@ -141,7 +141,6 @@
         </form>
       </section>
     </main>
-
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -167,6 +166,27 @@
         </div>
       </div>
     </footer>
+
+    <section class="popup failure-popup">
+      <h3 class="popup__title failure-popup__title">Что-то пошло не так!</h3>
+      <p class="popup__text failure-popup__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <div class="popup__button-container">
+        <a class="popup__button failure-popup__button" href="#" >Ок</a>
+      </div>
+    </section>
+
+    <section class="popup success-popup">
+      <h3 class="popup__title success-popup__title">Ваша заявка отправлена</h3>
+      <p class="popup__text success-popup__text">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы рассмотрим ее и оповестим вас.
+      </p>
+      <div class="popup__button-container">
+        <a class="popup__button success-popup__button" href="#">Закрыть окно</a>
+      </div>
+    </section>
 
   </body>
 </html>

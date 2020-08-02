@@ -9,13 +9,7 @@
   margin-bottom: 29px;
 }
 
-.user-contacts__fill {
-  @include form-input;
-
-  &::placeholder {
-    @include input-placeholder;
-  }
-}
+// .user-contacts__fill
 
 .user-contacts__label {
   @include form-label;

@@ -14,9 +14,17 @@
 }
 
 .site-nav__item {
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .site-nav__link {
   color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

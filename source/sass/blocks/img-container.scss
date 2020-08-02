@@ -1,7 +1,8 @@
 @import "../sass/variables.scss";
 
 .img-container {
-  @include bg-image-mobile;
+  @include bg-image-desktop;
+  background-position: center;
   background-color: $light-gray;
   min-width: 320px;
   min-height: 462px;

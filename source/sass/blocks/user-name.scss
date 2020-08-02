@@ -13,10 +13,4 @@
   margin-top: 29px;
 }
 
-.user-name__fill {
-  @include form-input;
-
-  &::placeholder {
-    @include input-placeholder;
-  }
-}
+// .user-name__fill

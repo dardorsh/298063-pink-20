@@ -6,9 +6,12 @@
 }
 
 .photo-section__title {
-  @include bg-image-mobile;
+  @include bg-image-desktop;
+  background-position: top;
   min-width: 320px;
   min-height: 220px;
+
+  margin: 0;
 
   color: $white;
   font-size: 24px;
