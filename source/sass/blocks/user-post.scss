@@ -1,14 +1,25 @@
 @import "../sass/variables.scss";
 
-.user-post {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+// .user-post {
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
 
-// .user-post__image
+.user-post__image {
+  margin: 0;
+}
 
 .user-post__container {
   background-color: $gray;
+  min-width: 280px;
+
+  padding-top: 25px;
+  padding-left: 17px;
+  padding-bottom: 25px;
+
+  margin: 0;
+  margin-top: -7px;
+  margin-bottom: 20px;
 }
 
 .user-post__comment {

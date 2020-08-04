@@ -9,3 +9,10 @@
 
   margin: 0;
 }
+
+@media (min-width:$tablet-width) {
+  .img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

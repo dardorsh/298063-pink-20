@@ -1,0 +1,71 @@
+@import "../sass/variables.scss";
+
+@media (max-width: $mobile-width-only) {
+  .impact {
+    display: none;
+  }
+}
+
+.impact {
+  background-color: $white;
+  // padding-top: 102px;
+  // padding-right: 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.impact__wrapper {
+  margin-top: 102px;
+  margin-right: 20px;
+  margin-left: 330px;
+}
+
+.impact__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.impact__text {
+  width: 310px;
+}
+
+.impact__link {
+  color: $pink;
+  text-decoration: underline;
+}
+
+@media (min-width: $desktop-width) {
+  .impact {
+    background-color: $gray;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .impact__wrapper {
+    margin: 0;
+    margin-left: 500px;
+    padding-top: 115px;
+    padding-bottom: 120px;
+  }
+
+  .impact__title {
+    font-size: 30px;
+    line-height: 30px;
+    
+    margin:0;
+  }
+
+  .impact__text {
+    width: 534px;
+    color: $midnight-blue;
+
+    margin: 0;
+    margin-top: 37px;
+    margin-bottom: 47px;
+  }
+}
+
+
+

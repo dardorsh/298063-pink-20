@@ -4,13 +4,8 @@
   font-weight: 300;
   font-size: 24px;
   color: $white;
-}
 
-.download__wrapper {
-  background-color: $dark-blue;
-  color: $white;
-  min-height: 271px;
-  padding-top: 28px;
+  margin: 0;
 }
 
 .download__link {
@@ -41,12 +36,46 @@
 .download__icons {
   @include list-style;
   margin-top: 38px;
+  width: 204px;
 }
 
 .download__info {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+  color: $white;
 
   margin: auto;
+}
+
+@media (max-width: $mobile-width-only) {
+  .download__wrapper {
+  background-color: $dark-blue;
+  color: $white;
+
+  margin: 0;
+  padding-top: 28px;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .download__info {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__title {
+    max-width: 300px;
+
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;
+
+    margin-top: 114px;
+    margin-left: 144px;
+  }
 }

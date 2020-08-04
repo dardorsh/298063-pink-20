@@ -3,3 +3,38 @@
 .page-footer {
   background-color: $white;
 }
+
+.page-footer__wrapper {
+  margin-right: 74px;
+  margin-left: 74px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// .page-footer__logo
+
+// .page-footer__social
+
+.page-footer__copyright {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+}
