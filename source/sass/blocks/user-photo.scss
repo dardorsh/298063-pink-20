@@ -8,7 +8,7 @@
 @media (min-width: $tablet-width) {
   .user-photo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 300px;
     column-gap: 20px;
   }
 }

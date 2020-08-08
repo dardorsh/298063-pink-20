@@ -20,6 +20,8 @@
   margin: 0;
   margin-top: -7px;
   margin-bottom: 20px;
+
+  box-sizing: border-box;
 }
 
 .user-post__comment {
@@ -33,3 +35,18 @@
 }
 
 // .user-post__likes
+
+@media (min-width: $tablet-width) {
+  .user-post__image img {
+    max-width: 300px;
+    max-height: 300px;
+
+    object-fit: cover;
+  }
+
+  .user-post__image--highlight img {
+    max-width: 100%;
+    height: auto;
+    object-fit: none;
+  }
+}
