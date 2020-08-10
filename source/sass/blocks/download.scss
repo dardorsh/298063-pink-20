@@ -99,6 +99,11 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .download {
+    position: static;
+  }
+  
   .download__title {
     max-width: 300px;
 

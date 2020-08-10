@@ -1,7 +1,9 @@
 @import "../variables.scss";
 
 
-// .main-nav
+.main-nav {
+  background-color: $header-transparent-color;
+}
 
 // .main-nav__toggle
 @media (max-width: $desktop-width) {
@@ -15,12 +17,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+  }
+
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__wrapper {
     min-width: 620px;
+    height: auto;
     margin: 0;
     margin-top: 48px;
     margin-right: 130px;
