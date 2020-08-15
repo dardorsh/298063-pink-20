@@ -4,10 +4,36 @@
 
 .survey__section {
   border: none;
-
   margin: 0;
   padding: 0;
   padding-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $light-gray;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 70px;
+  }
+}
+
+.survey__section--name {
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-bottom: 51px;
+  }
+}
+
+.survey__section--submit {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .survey__subtitle {
@@ -28,10 +54,11 @@
 
 .survey__input {
   @include form-input;
-  cursor: pointer;
+  width: 86%;
   font-size: 18px;
   line-height: 30px;
   padding-left: 20px;
+  cursor: pointer;
 
   &::placeholder {
     @include input-text;
@@ -43,6 +70,10 @@
 
   &:focus {
     outline-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 93%;
   }
 }
 

@@ -1,12 +1,41 @@
 @import "../sass/variables.scss";
-// .user-emotions
+
+.user-emotions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
 .user-emotions__fill {
   width: 276px;
   min-height: 197px;
   margin-top: 22px;
   resize: none;
 
+
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    margin: auto;
+    margin-top: 42px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-left: 0;
   }
 }

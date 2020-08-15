@@ -51,7 +51,13 @@
     display: block;
     min-width: auto;
     min-height: auto;
-
     text-transform: none;
+
+    padding-bottom: 19px;
+    margin-left: 79px;
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }

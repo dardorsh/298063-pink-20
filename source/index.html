@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
 
       <nav class="main-nav">
@@ -20,7 +20,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
+            <li class="site-nav__item site-nav__item--active">
               <a class="site-nav__link">Главная</a>
             </li>
             <li class="site-nav__item">
@@ -43,9 +43,8 @@
       </nav>
 
       <div class="download">
+        <div class="download__container">
           <h2 class="download__title">Взгляните на&nbsp;жизнь иначе!</h2>
-          <img class="download__image" src="https://via.placeholder.com/150x150" alt="Смартфон с фотографией в розовых тонах на экране">
-
           <div class="download__wrapper">
             <a class="download__link" href="#">Скачать приложение</a>
             <ul class="download__icons system-list">
@@ -67,6 +66,7 @@
             </ul>
             <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
+        </div>
       </div>
     </header>
 
@@ -190,23 +190,23 @@
       </section>
 
       <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <p class="contacts__text">
+          <p class="contacts__text contacts__text--call">
             Звоните:
             <a class="contacts__item" href="tel:+78125556666" >+7 (812) 555-66-66</a>
           </p>
-          <p class="contacts__text">
+          <p class="contacts__text contacts__text--write">
             Пишите:
             <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p class="contacts__text">
+          <p class="contacts__text contacts__text--visit">
             Приезжайте в гости:
             <span class="contacts__item contacts__item--inactive">ул. Большая Конюшенная, 19/8</span>
           </p>
         </div>
         <div class="contacts__map">
-          <img src="https://via.placeholder.com/150x150" alt="Офис компании расположен по адресу ул. Большая Конюшенная, 19/8">
+          <p class="visually-hidden">Карта</p>
         </div>
       </section>
 

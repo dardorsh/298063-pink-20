@@ -3,6 +3,15 @@
 .user-achievements {
   background-color: $gray;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .user-achievements__list {

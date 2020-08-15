@@ -5,6 +5,10 @@
   background-color: $header-transparent-color;
 }
 
+.main-nav__list {
+  display: none;
+}
+
 // .main-nav__toggle
 @media (max-width: $desktop-width) {
   .main-nav__toggle {
@@ -19,6 +23,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: flex;
+    justify-content: space-between;
   }
 
   .main-nav__toggle {
@@ -27,9 +32,9 @@
 
   .main-nav__wrapper {
     min-width: 620px;
-    height: auto;
     margin: 0;
     margin-top: 48px;
     margin-right: 130px;
+    margin-left: 173px;
   }
 }

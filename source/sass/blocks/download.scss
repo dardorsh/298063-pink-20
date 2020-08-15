@@ -1,5 +1,17 @@
 @import "../sass/variables.scss";
 
+.download {
+  @media (min-width: $desktop-width) {
+    // margin-top: 20px;
+    // padding-bottom: 120px;
+  }
+}
+
+.download__container {
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
 .download__title {
   font-weight: 300;
   font-size: 24px;
@@ -55,6 +67,7 @@
     background-color: $dark-blue;
     color: $white;
 
+    min-height: 271px;
     margin: 0;
     padding-top: 28px;
     padding-left: 20px;
@@ -69,15 +82,30 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .download__container {
+    background-position: 0 28%;
+  }
+
+  .download__title {
+    min-height: 373px;
+    padding-top: 29px;
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .download__wrapper {
-    margin-top: 51px;
+  .download__container {
+    width: 660px;
+    min-height: 545px;
+    margin: auto;
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
   }
 
   .download__title {
     width: 248px;
     margin-top: 102px;
     margin-left: 38px;
+    margin-bottom: 39px;
     font-size: 40px;
     line-height: 48px;
   }
@@ -88,6 +116,7 @@
 
   .download__icons {
     margin-left: 66px;
+    margin-top: 46px;
   }
 
   .download__info {
@@ -99,35 +128,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .download__container {
+    width: 940px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 83px;
 
-  .download {
-    position: static;
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-position: 30px 0;
   }
-  
+
   .download__title {
     max-width: 300px;
-
     font-size: 50px;
     line-height: 68px;
     text-align: center;
-
+    margin: 0;
     margin-top: 114px;
-    margin-left: 144px;
+    margin-bottom: 51px;
   }
 
   .download__link {
-    margin-left: 150px;
+    margin: 0;
   }
 
   .download__icons {
     margin-top: 75px;
-    margin-left: 180px;
   }
 
   .download__info {
     width: 300px;
     margin-top: 60px;
-    margin-left: 150px;
     margin-bottom: 130px;
     text-align: center;
   }

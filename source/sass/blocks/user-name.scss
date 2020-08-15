@@ -1,16 +1,43 @@
 @import "../sass/variables.scss";
 
-// .user-name
+.user-name {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+  }
+}
 
 .user-name__list {
   @include list-style;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
-// .user-name__item
+.user-name__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 52px;
+  }
+}
 
 .user-name__label {
   @include form-label;
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
-// .user-name__fill
+.user-name__fill {
+  width: 93%;
+}

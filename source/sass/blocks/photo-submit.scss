@@ -3,6 +3,10 @@
 .photo-submit {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .photo-submit__button {
@@ -20,6 +24,10 @@
 
   cursor: pointer;
   outline: none;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 44px;
+  }
 }
 
 .photo-submit__button--post {
