@@ -10,6 +10,7 @@
 .download__container {
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: left;
 }
 
 .download__title {
@@ -58,7 +59,7 @@
   font-weight: 300;
   color: $white;
   text-align: center;
-
+  max-width: 280px;
   margin: auto;
 }
 
@@ -70,7 +71,6 @@
     min-height: 271px;
     margin: 0;
     padding-top: 28px;
-    padding-left: 20px;
 
     display: flex;
     flex-direction: column;

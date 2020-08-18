@@ -4,11 +4,31 @@
   background-color: $gray;
   padding-top: 50px;
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
 }
 
-// .pricing__wrapper
+.pricing__wrapper {
+  overflow: scroll;
 
-// .pricing__toggles
+  @media (min-width: $tablet-width) {
+    overflow: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: auto;
+  }
+}
+
+.pricing__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 .prices-table {
   background-color: $white;
@@ -19,16 +39,23 @@
   color: $midnight-blue;
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
+  overflow: hidden;
 
-  margin: auto;
+  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    table-layout: fixed;
+  }
 }
 
 .prices-table__item {
   border: 2px solid $light-gray;
   border-radius: 0 0 0 1px;
 
-  width: 276px;
+  // width: 276px;
   padding-left: 20px;
+  // width: 25%;
 }
 
 .prices-table__row--highlight {
