@@ -10,6 +10,7 @@
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0;
     background-size: auto;
+    min-height: 440px;
     // padding-bottom: 143px;
   }
 
@@ -17,7 +18,6 @@
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-position: 50% top;
     // padding-bottom: 104px;
-    max-height: 855px;
   }
 }
 

@@ -9,6 +9,7 @@
   .user-photo {
     display: grid;
     grid-template-columns: 300px 300px;
+    grid-template-rows: min-content min-content;
     column-gap: 20px;
   }
 }

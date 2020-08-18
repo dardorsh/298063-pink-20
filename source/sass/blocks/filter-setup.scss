@@ -3,10 +3,59 @@
 // .filter-setup
 
 .filter-setup__options {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-// .filter-setup__item
+.filter-setup__option {
+  display: flex;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.filter-setup__item {
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  margin-right: 35px;
+}
+
+.filter-setup__item svg {
+  fill: #b5b9be;
+}
+
+.filter-setup__item--crop {
+  width: 44px;
+  height: 44px;
+}
+
+.filter-setup__item--crop svg {
+  fill: $pink;
+}
+
+.filter-setup__item--fill {
+  width: 48px;
+  height: 43px;
+}
+
+.filter-setup__item--contrast {
+  width: 32px;
+  height: 32px;
+}
 
 .filter-setup__range {
   @media (min-width: $tablet-width) {
@@ -14,6 +63,4 @@
   }
 }
 
-.filter-setup__results {
-  margin-left: 20px;
-}
+// .filter-setup__results

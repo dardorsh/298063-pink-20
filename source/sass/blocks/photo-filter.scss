@@ -11,16 +11,34 @@
 }
 
 .photo-filter__wrapper {
+  padding-top: 20px;
+  padding-bottom: 41px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    width: 620px;
+    margin: auto;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     padding-top: 57px;
-    padding-left: 80px;
+    margin-left: 80px;
     padding-bottom: 57px;
   }
+}
+
+.photo-filter__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
 }
 
 .photo-filter__intro {
@@ -44,11 +62,25 @@
 }
 
 .photo-filter__upload {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .photo-filter__settings {
+  margin-top: 43px;
+
   @media (min-width: $tablet-width) {
     align-self: center;
+    display: flex;
+    flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin: auto;
+  }
+}
+
+.filter-setup__options {
+  display: flex;
+  flex-direction: column;
 }
