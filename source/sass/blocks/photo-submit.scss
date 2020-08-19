@@ -29,12 +29,13 @@
   cursor: pointer;
   outline: none;
 
-  @media (min-width: $tablet--width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 44px;
+    width: 183px;
   }
 }
 
