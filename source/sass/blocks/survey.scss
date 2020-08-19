@@ -7,12 +7,15 @@
   margin: 0;
   padding: 0;
   padding-left: 22px;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $light-gray;
     margin-left: 22px;
     margin-right: 22px;
     margin-bottom: 70px;
+
+    padding-left: 60px;
   }
 }
 
@@ -24,8 +27,17 @@
 }
 
 .survey__section--submit {
+  padding-left: 22px;
+  padding-right: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     order: 6;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +104,6 @@
   text-transform: uppercase;
 
   margin-top: 52px;
-  margin-left: 22px;
   margin-bottom: 46px;
 
   cursor: pointer;

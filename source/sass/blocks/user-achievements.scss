@@ -11,6 +11,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-left: 60px;
+    padding-right: 59px;
   }
 }
 
@@ -18,6 +20,14 @@
   @include list-style;
   margin: 0;
   margin-top: 44px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .user-achievements__option {

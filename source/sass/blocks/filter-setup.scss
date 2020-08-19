@@ -1,6 +1,11 @@
 @import "../sass/variables.scss";
 
-// .filter-setup
+.filter-setup {
+  @media (min-width: $tablet-width) {
+    flex-basis: 275px;
+    box-sizing: border-box;
+  }
+}
 
 .filter-setup__options {
   display: flex;
@@ -12,12 +17,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 }
 
 .filter-setup__option {
   display: flex;
   margin: auto;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -32,6 +39,7 @@
   border: none;
 
   margin-right: 35px;
+  box-sizing: border-box;
 }
 
 .filter-setup__item svg {
@@ -41,6 +49,11 @@
 .filter-setup__item--crop {
   width: 44px;
   height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .filter-setup__item--crop svg {
@@ -58,6 +71,8 @@
 }
 
 .filter-setup__range {
+  position: relative;
+  
   @media (min-width: $tablet-width) {
     text-align: center;
   }

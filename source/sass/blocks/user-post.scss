@@ -117,7 +117,9 @@
 }
 
 .user-post__likes--panorama {
-  position: absolute;
-  top: 16px;
-  right: 30px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 16px;
+    right: 30px;
+  }
 }
