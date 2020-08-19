@@ -17,19 +17,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    margin-bottom: 63px;
   }
 }
 
 .filter-setup__option {
   display: flex;
-  margin: auto;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: center;
+    width: 275px;
+    border-bottom: 1px solid $transparent-blue;
+
+    padding-top: 27px;
+    padding-right: 18px;
+    padding-bottom: 23px;
+
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    padding-top: 14px;
+    padding-bottom: 13px;
   }
 }
 
@@ -46,9 +56,10 @@
   fill: #b5b9be;
 }
 
-.filter-setup__item--crop {
+.filter-setup__item--crop svg {
   width: 44px;
   height: 44px;
+  fill: $pink;
 
   @media (min-width: $tablet-width) {
     width: 22px;
@@ -56,18 +67,24 @@
   }
 }
 
-.filter-setup__item--crop svg {
-  fill: $pink;
-}
-
-.filter-setup__item--fill {
+.filter-setup__item--fill svg {
   width: 48px;
   height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
 }
 
-.filter-setup__item--contrast {
+.filter-setup__item--contrast svg {
   width: 32px;
   height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .filter-setup__range {

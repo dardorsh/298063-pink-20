@@ -1,30 +1,42 @@
 @import "../sass/variables.scss";
 
 .range-controls {
-  margin-top: 39px;
-  margin-left: 20px;
+  position: relative;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
-// .range-controls__scale
+.range-controls--active {
+  display: block;
+}
 
 .range-controls__bar {
   width: 240px;
   height: 2px;
+  margin: 0 auto;
+  background: $midnight-blue;
 
-  background-color: $midnight-blue;
-  position: absolute;
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
 }
 
 .range-controls__toggle {
   width: 14px;
   height: 14px;
-  background-color: $white;
-  border: 2px solid $pink;
   border-radius: 50%;
+  border: 2px solid $pink;
+  background-color: $gray;
+  box-sizing: border-box;
 
-  position: relative;
-  top: -8px;
-  left: 193px;
-
-  cursor: pointer;
+  position: absolute;
+  top: -7px;
+  right: 42px;
 }

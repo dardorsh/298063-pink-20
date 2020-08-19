@@ -63,6 +63,10 @@
 
 .photo-filter__upload {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo-filter__settings {
@@ -72,6 +76,7 @@
     align-self: center;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +85,7 @@
   }
 }
 
-.filter-setup__options {
-  display: flex;
-  flex-direction: column;
-}
+// .filter-setup__options {
+//   display: flex;
+//   flex-direction: column;
+// }
