@@ -72,8 +72,10 @@
 
 .filter-setup__range {
   position: relative;
-  
-  @media (min-width: $tablet-width) {
+}
+
+@media (min-width: $tablet-width) {
+  .filter-setup__range {
     text-align: center;
   }
 }

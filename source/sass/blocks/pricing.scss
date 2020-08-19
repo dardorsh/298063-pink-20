@@ -19,6 +19,12 @@
   width: 100%;
   overflow: hidden;
 
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (min-width: $tablet-width) {
     margin: auto;
   }
@@ -27,14 +33,6 @@
 .pricing__toggles {
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.pricing__wrapper {
-  @media (max-width: $mobile-width-only) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -70,7 +68,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-left:15px;
+    padding-left: 15px;
     min-width: 152px;
   }
 
